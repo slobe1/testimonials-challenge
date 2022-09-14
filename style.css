@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ecf2f8;
+}
+
+.container{
+    /* display: flex;
+    flex-direction: column; */
+    /* margin: 10% 5%; */
+    padding: 10% 5%;
+}
+
+#purple1{
+    background-color: #7541c8;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+#gray2{
+    background-color: #48556a;
+    color: #fff;
+}
+#quote{
+ 
+    position: absolute;
+    right: 0px;
+    margin-right: 5%;
+    top: 0;
+    z-index: -1;
+}
+#white-tall3{
+    background-color: #fff;
+}
+#black4{
+    background-color: #19212e;
+    color: #fff;
+}
+#white-short5{
+    background-color: #fff;
+}
+.grid-item{
+    border-radius: 7px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+h1{
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+/* Image, name and verified grad. Includes name-contain */
+.name-container{
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+.name-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.verified-graduate{
+    opacity: .5;
+    font-size: 10px;
+}
+
+.name-container img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+.container div p{
+    opacity: .70;
+}
+
+@media (min-width: 576px){
+.container{
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    /* border: 5px solid #19212e; */
+}
+#white-tall3{
+    flex-basis: 20%;
+}
+/* AKA MAIN LEFT */
+#big-left-container{
+   
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+}
+#big-left-container .grid-item{
+    margin-right: 25px;
+}
+/* purple and gray AKA TOP */
+#top-left-container{
+    
+    display: flex;
+    flex-basis: 50%;
+}
+/* white and black AKA BOTTOM*/
+#bottom-left-container{
+    
+    display: flex;
+    flex-basis: 50%;
+}
+
+#purple1{
+    flex-basis: 70%;
+}
+#gray2{
+    flex-basis: 30%;
+}
+#black4{
+    flex-basis: 70%;
+}
+#white-short5{
+    flex-basis: 30%;
+}
+}
+/* width: 1035 starts looking ugly.  700 is super ugly. 576 is when it breaks.*/
